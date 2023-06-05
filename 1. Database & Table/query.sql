@@ -36,7 +36,7 @@ Maka ketika kita merestart laptop kita data nya akan hilang.
 CREATE TABLE nama_table (
     nama_field TYPE_DATA,
     nama_field2 TYPE_DATA
-) ENGINE InnoDB;
+) ENGINE = InnoDB;
 
 -- Contoh membuat users
 CREATE TABLE users (
@@ -49,7 +49,7 @@ CREATE TABLE users (
     -- By default, di MySQL jika sebuah field tidak disi, MYSQL otomatis mengisinya dengan nilai null
     photo VARCHAR(100) NOT NULL DEFAULT 'no-photo.png',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-) ENGINE InnoDB;
+) ENGINE = InnoDB;
 
 -- Untuk Menampilkan list table
 SHOW TABLES;
