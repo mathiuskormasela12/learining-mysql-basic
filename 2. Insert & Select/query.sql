@@ -46,3 +46,12 @@ CREATE TABLE users(
 -- Menambah primary key pada existing table
 ALTER TABLE products
 ADD PRIMARY KEY (id);
+
+-- Where Clause
+-- Untuk menfilter data berdasarkan kolom tertentu
+-- Akan bersifat Case Insensitive
+-- jadi jika di database adanya nama nya Mathius
+-- tapi kita tulis di where clause nya adalah mathius
+-- maka mysql akan tetep menampilkan data nya
+-- karena mysql tidak perduli huruf besar atau huruf kecil
+SELECT * FROM products WHERE name = 'laptop';
