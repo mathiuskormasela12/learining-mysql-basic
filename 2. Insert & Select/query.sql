@@ -23,3 +23,26 @@ SELECT * FROM products;
 
 -- Untuk menampilkan data (menampilkan  beberapa kolom) (menampikan kolom name, id & price) urutannya juga gpp ngacak
 SELECT price, id, name from products;
+
+-- Primary key merupakan id dari sebuah table. Dalam MySQL
+-- Primary Key bukanlan suatu yg wajib, namun lebih di saranakn
+-- sebuah table untuk memiliiki setidaknya 1 primary key
+-- Primary key adalah identitas untuk setiap baris datanya
+-- Primary key harus unik, tidak boleh ada primary key yg value nya sama
+-- Dalam MySQL memungkinkan untuk memiliki lebih dari satu primary key
+-- misal 2 atau 3 kolom yg akan menjadi primary key
+-- namun lebih di sarankan untuk memiliki hanya 1 primary key
+-- Kecuali ada case-case spesial, contoh jika ingin mengimplementasikan
+-- relasi Many To Many
+CREATE TABLE users(
+    id INT AUTO_INCREMENT,
+    username VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    -- Membuat kolom id & username menjadi primary key
+    PRIMARY KEY (id, username)
+) ENGINE = InnoDb;
+
+-- Menambah primary key pada existing table
+ALTER TABLE products
+ADD PRIMARY KEY (id);
