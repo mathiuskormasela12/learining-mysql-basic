@@ -32,16 +32,16 @@ DImana dengan InnoDB supports transactions, row-level locking, and foreign keys.
 Ada engine MEMORY dimana database file akan di simpan di alam RAM.
 Maka ketika kita merestart laptop kita data nya akan hilang.
 
--- Untuk Membuat database
+-- Untuk Membuat table
 CREATE TABLE nama_table (
     nama_field TYPE_DATA,
     nama_field2 TYPE_DATA
 ) ENGINE = InnoDB;
 
--- Contoh membuat users
+-- Contoh membuat table users
 CREATE TABLE users (
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    -- NOT NULL berfungsi untuk membuat field full_name wajib di isi saya insert daat
+    -- NOT NULL berfungsi untuk membuat field full_name wajib di isi saya insert data
     full_name VARCHAR(100) NOT NULL,
     email VARCHAR(50) NOT NULL,
     birthday DATE NOT NULL,
@@ -59,7 +59,7 @@ DESCRIBE nama_table;
 
 atau
 
-DES nama_table;
+DESC nama_table;
 
 -- Untuk melihat query dri pembuatan sebuah table
 SHOW CREATE TABLE nama_table;
@@ -67,7 +67,7 @@ SHOW CREATE TABLE nama_table;
 -- Untuk menghapus table
 DROP TABLE nama_table;
 
--- Untuk menambah field ketika table sudah terlanjut di buat
+-- Untuk menambah field ketika table sudah terlanjur di buat
 ALTER TABLE nama_table
 ADD COLUMN nama_field_baru TYPE_DATA;
 
@@ -93,7 +93,7 @@ MODIFY birthday LONGTEXT;
 
 -- Untuk menghapus field pada table
 ALTER TABLE nama_table
-DROP COLUMN nama_fiele_yg_mau_dihapus;
+DROP COLUMN nama_field_yg_mau_dihapus;
 
 -- Untuk menghapus field birthday pada table users
 ALTER TABLE users
