@@ -92,7 +92,7 @@ WHERE MATCH (title, content) AGAINST ('+Learning -bahasa' IN BOOLEAN MODE);
 
 -- Fulltext search menggunakan Query Expansion 
 -- Untuk search perkata, namun akan do search 2 kali
--- misal search kata "coba", dan ternyata hasil di kolom yg memilik
+-- misal search kata "coba", dan ternyata hasil di kolom yg memiliki
 -- kata learning ada kata "Javascript", maka akan di search berdasarkan kata "Javascript" juga
 SELECT *
 FROM artikel
