@@ -97,3 +97,11 @@ WHERE MATCH (title, content) AGAINST ('+Learning -bahasa' IN BOOLEAN MODE);
 SELECT *
 FROM artikel
 WHERE MATCH (title, content) AGAINST ('coba' WITH QUERY EXPANSION);
+
+-- Delete FUlltext
+ALTER TABLE artikel
+DROP INDEX artikel_search;
+
+-- Add Fulltext on existing table
+ALTER TABLE artikel
+ADD FULLTEXT artikel_search (title, content);
