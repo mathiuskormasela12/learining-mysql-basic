@@ -50,7 +50,7 @@ SELECT * FROM products WHERE name LIKE '%Lapt';
 -- Search jike field name di dalam nya terdapt keyword lapt
 SELECT * FROM products WHERE name LIKE '%Lapt%';
 
--- Search jike field ane di dlama keywrod tidak terdapat keyword lapt (negasi)
+-- Search jike field name di dlm table tidak terdapat keyword lapt (negasi)
 SELECT * FROM products WHERE name NOT LIKE '%Lapt%';
 
 
@@ -59,12 +59,11 @@ SELECT * FROM products WHERE name NOT LIKE '%Lapt%';
 -- Select data yg field category nya null
 SELECT * FROM products WHERE category IS NULL;
 
--- Select data yg di field caegory nya bukan null
+-- Select data yg di field category nya bukan null
 SELECT * FROM products WHERE category IS NOT NULL;
 
 
 -- ================= Where Operator (Between Operator) =================
--- By default jika kita tidak nenetukan ASC atau DESC, Mysql akan mengurutkannya berdasarkan ASC
 -- Select data yg field nya antara 0 sampai 7000 (range)
 SELECT * FROM products WHERE price BETWEEN 0 AND 7000;
 
@@ -74,12 +73,13 @@ SELECT * FROM products WHERE price NOT BETWEEN 0 AND 7000;
 
 -- Order By Untuk Mengurutkan data berdasarkan field tertentu
 -- Order berdasarkan field name secara ascending (a-z)
+-- By default jika kita tidak nenetukan ASC atau DESC, Mysql akan mengurutkannya berdasarkan ASC
 SELECT * FROM products ORDER BY name ASC;
 
 -- Order berdasarkan field name secara descending (z-a)
 SELECT * FROM products ORDER BY name DESC;
 
--- ORder bedasarakan field id secara desc terus urutkan lagi berdasarkan field name asc
+-- Order bedasarakan field id secara desc terus urutkan lagi berdasarkan field name secara asc
 SELECT * FROM products ORDER BY id DESC, name ASC;
 
 
@@ -87,7 +87,8 @@ SELECT * FROM products ORDER BY id DESC, name ASC;
 -- Untuk mebuat MySQL hanya menampilkan 2 data
 SELECT * FROM products LIMIT 2;
 
--- Untuk membuat MySQL skip 1 data dan menampilan 2 data Rumus: LIMIT skip, limit;
+-- Untuk membuat MySQL skip 1 data dan menampilan 2 data.
+--  Rumus: LIMIT skip, limit;
 SELECT * FROM products LIMIT 1, 2;
 -- atau
 SELECT * FROM products LIMIT 2 OFFSET 1;
@@ -96,5 +97,5 @@ SELECT * FROM products LIMIT 2 OFFSET 1;
 -- Jika di sebuah field memilik data yg duplicate maka hanya akan di tampilkan sekali
 -- Untuk menampikan field category, jika value dari field category ada yg duplicate, maka hanya akan di tampilkan satu datanya
 -- misal category A ada 10 dan category B 1, maka akan di tampilkan 2 data aja
--- yaitu 1 data field A dan satu data field B
+-- yaitu 1 data category A dan satu data category B
 SELECT DISTINCT category FROM products;

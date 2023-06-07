@@ -16,7 +16,7 @@ YEAR(created_at) AS 'Created Year',
 MONTH(created_at) AS 'Created Month'
 FROM products;
 
--- Control Flow merupakan sebuah function untuk melakukan pengkondisian  di dalam MySQL
+-- Control Flow merupakan sebuah function untuk melakukan pengkondisian di dalam MySQL
 -- Namun hanya pengkondisian yg simple, klo yg kompleks better di code bhs program aja
 
 -- 1. Switch Case
@@ -41,7 +41,7 @@ FROM products;
 SELECT
 id,
 name,
--- Untuk menampilakn suatu value juga sebuah field itu null
+-- Untuk menampilkan suatu value juga sebuah field itu null
 -- rumus : IFNULL(nama field yg mau di cek, value yg akan di tampilkan jika field nya itu  null')
 -- Kode dibawah akan ngecek, jika category nya null maka isi value nya dengan string 'Ini Null'
 IFNULL(category, 'Ini Null')

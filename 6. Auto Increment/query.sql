@@ -22,5 +22,5 @@ INSERT INTO admin(first_name, last_name)
 VALUES('Eunbi', 'Hwang'),
       ('Yewon', 'Kim');
 
--- Untuk mengetshu terakhir kali id yg di buat oleh auto increment itu nomor brp
+-- Untuk mengetahui terakhir kali id yg di buat oleh auto increment itu nomor brp
 SELECT LAST_INSERT_ID();

@@ -4,9 +4,9 @@
 -- proses INSERT, UPDATE & DELETE. Oleh sebab itu kita harus
 -- bijak dalam membuat index.
 -- kita bisa membuat index lebih dari satu
--- Jika kita mneggunakna PRIMARY KEY atau UNIQUE CONSTRAINT
+-- Jika kita menggunakan PRIMARY KEY atau UNIQUE CONSTRAINT
 -- MySQL akan otomatis menambahkan index ke dalam kolom tersebut
--- secara otomatis, jdi tidak perlu menambahakn index lgi
+-- secara otomatis, jdi tidak perlu menambahkan index lgi
 -- pada 2 kolom tersebut
 
 -- Adding Index on Existing Table
@@ -48,7 +48,7 @@ CREATE TABLE siswa (
 -- menjadi lemot meskipun kita menambahkan index. Untuk Solve
 -- Itu kita harus menggunakanan FULLTEXT Search. Namun
 -- Jika case nya bener2 ingin membuat search engine, better
--- pake database yg khusu untuk search engine, contoh nya elastic search
+-- pake database yg khusus untuk search engine, contoh nya elastic search
 
 -- Crete table with FullTextSearch
 CREATE TABLE artikel (

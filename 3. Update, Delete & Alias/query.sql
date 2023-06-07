@@ -9,7 +9,7 @@ UPDATE products SET category = 'Makanan' WHERE id = 'P0001';
 -- Untuk mengupdate data dengan menggunakan existing value
 -- misal value nya price adalah 10000 maka jika perintah dibawah di jalankan
 -- maka value dari price akan berubah menjadi 10000 + 5000 yaitu 15000
--- hati dalam update data, jika kita tidak menulis where clause nya
+-- hati2 dalam update data, jika kita tidak menulis where clause nya
 -- maka MYSQL akan mengupdate seluruh isi tablennya
 UPDATE products SET price = price + 5000 WHERE id = 'P0003';
 

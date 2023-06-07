@@ -17,7 +17,7 @@ SELECT id, name, price / 2 FROM products;
 -- Kita bisa menggunakan Numeric Method langsung di perintah SELECT tanpa memiliki table.
 SELECT 100 / 2 AS Coba;
 
--- 4. Untuk melakukan pembagian yg sekaku menghasilkan angka integer
+-- 4. Untuk melakukan pembagian yg selalu menghasilkan angka integer
 SELECT id, name, price DIV 2 AS 'Divide INT' FROM products;
 
 -- 5. Untuk melakukan pertambahan

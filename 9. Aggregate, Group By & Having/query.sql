@@ -1,5 +1,5 @@
--- MySQL Aggragate untuk menghasilkan data yg berbeda dari kumpulan data
--- Ketika kita melakukan aggregate data, jgn menampilkan kolom lain karena akan error
+-- MySQL Aggragate untuk menghasilkan data yg berbeda dari kumpulan data.
+-- Ketika kita melakukan aggregate data, jgn menampilkan kolom lain karena akan error.
 -- Klo ingin nampilin kolom lain mesti pake group by
 
 -- 1. SUM 
