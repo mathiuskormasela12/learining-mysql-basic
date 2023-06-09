@@ -27,3 +27,6 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON mysql_basic.* TO 'mathius'@'localhost';
 
 -- Remove Hak Akses
 REVOKE INSERT, UPDATE, DELETE ON mysql_basic.* FROM 'mathius'@'localhost';
+
+-- Menampilan List Hak Akes yg di miliki sebuah user
+SHOW GRANTS FOR 'user1'@'localhost';
