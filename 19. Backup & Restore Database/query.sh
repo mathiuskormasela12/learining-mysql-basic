@@ -10,6 +10,7 @@ mysql --user=root --password mysql_basic_restore < /Users/mathius/Documents/back
 Masuk dulu ke dalam MySQL Client
 mysql -uroot -p
 trus create database baru
+trus use database baru
 habis itu ketikan ini di terminal
 mysql client
 source /Users/mathius/Documents/backup.sql
